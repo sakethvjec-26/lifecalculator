@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0a0f1c;
+    background-image: 
+        linear-gradient(rgba(0,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,255,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    padding: 20px;
+}
+
+.box {
+    position: relative;
+    background: rgba(10, 15, 28, 0.85);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 45px 55px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 520px;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.15);
+    transition: 0.4s ease;
+    animation: float 4s ease-in-out infinite;
+}
+
+.box:hover {
+    box-shadow: 0 0 60px rgba(0, 255, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Typography */
+.box h1 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.box p {
+    font-size: 15px;
+    color: #b5c7ff;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+input[type="date"] {
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin: 20px 0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="date"]:focus {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+.project-btn {
+    display: inline-block;
+    padding: 15px 45px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0a0f1c;
+    background: #00ffff;
+    border-radius: 40px;
+    box-shadow: 0 0 25px #00ffff;
+    transition: 0.4s ease;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+.project-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 45px #00ffff;
+}
+
+.back-btn {
+    display: inline-block;
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    text-shadow: 0 0 15px #00ffff;
+}
+
+#result {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+#result strong {
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.age-box {
+    text-align: center;
+}
